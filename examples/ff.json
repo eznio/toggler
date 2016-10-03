@@ -1,0 +1,31 @@
+{
+    "FEATURE-FLAG-1": {
+        "values": {
+            "local": true,
+            "dev": true,
+            "stg": {
+                "99": false,
+                "1": true
+            },
+            "prd": false
+        },
+        "groups": [
+            "users",
+            "devs"
+        ],
+        "updates": [
+            {
+                "time": "2016-10-01 00:00:00",
+                "values": {
+                    "stg": true
+                }
+            },
+            {
+                "time": "2016-10-03 00:00:00",
+                "values": {
+                    "prd": true
+                }
+            }
+        ]
+    }
+}
